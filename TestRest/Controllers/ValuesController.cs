@@ -11,9 +11,9 @@ namespace TestRest.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public int Get()
         {
-            return new string[] { "value1", "value2" };
+           return 2;
         }
 
         // GET api/values/5
