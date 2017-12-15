@@ -13,7 +13,9 @@ namespace TestRest.Controllers
         [HttpGet]
         public int Get()
         {
-           return 2;
+            int a = 10;
+            int b = 10;
+           return a+b;
         }
 
         // GET api/values/5
