@@ -20,7 +20,6 @@ namespace TestRest
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-            .UseUrls("http://localhost:5065")
                 .Build();
     }
 }
