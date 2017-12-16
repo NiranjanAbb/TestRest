@@ -13,11 +13,14 @@ namespace TestRest.Controllers
         [HttpGet]
         public int Get()
         {
-            int a = 10;
+            int a = 20;
             int b = 10;
-           return a+b;
+            return sum(a, b);
         }
-
+        public int sum(int a,int b)
+        {
+            return a - b;
+        }
         // GET api/values/5
         [HttpGet("{id}")]
         public string Get(int id)
